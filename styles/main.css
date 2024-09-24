@@ -1,0 +1,97 @@
+
+:root {
+  --color_primary: #F6E05E;
+  --color_primary_light: #F7E576;
+  --color_primary_lighter: #F5F0D2;
+  --grey_color: #f4f6f8;
+  --grey_hover_color: #999999;
+  --grey_variant_one: #E9ECEF;
+  --grey_variant_two: #909090;
+  --grey_variant_three: #707070;
+  --text_color_primary: #404040;
+  --text_color_secondary: #454545;
+  --text_color_tertiary: #777777;
+  --semi_transparent_white_color: #ffffffcc;
+}
+
+
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/iransans_fd.ttf");
+}
+
+@font-face {
+  font-family: "IranSans_ul", sans-serif;
+  src: url("../fonts/iransans_ultralight.ttf");
+}
+
+@font-face {
+  font-family: "Titr_Bold";
+  src: url("../fonts/iransans_bold.ttf");
+}
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  direction: rtl;
+  font-family: IranSans, sans-serif;
+  overflow-x: hidden;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+a.custom {
+  display: block;
+  text-decoration-line: none;
+}
+
+a.custom:link, a.custom:visited {
+  color: #000;
+}
+
+
+.after_pic {
+  position: relative;
+}
+
+.after_pic::after {
+  content: "";
+  width: 12.5rem;
+  height: 6.25rem;
+  position: absolute;
+  background-image: url("../images/marker.svg");
+  background-repeat: no-repeat;
+  top: 2.38rem;
+  left: calc(50% - 3.75rem);
+}
+
+.header .after_pic::after {
+  top: 3.25rem;
+}
+
+
+@media (max-width: 446px) {
+  .after_pic::after {
+    top: 9vw;
+  }
+
+  .header .after_pic::after {
+    top: 11vw;
+  }
+}
+
+
+
+

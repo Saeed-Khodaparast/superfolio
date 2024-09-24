@@ -1,0 +1,90 @@
+
+.portfolio {
+  width: 100%;
+  padding: 3.75rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .title {
+  text-align: center;
+}
+
+.portfolio .content {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  direction: ltr;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.portfolio .content .group .item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.75rem;
+  overflow: hidden;
+}
+
+.portfolio .content .item img {
+  width: 20vw;
+}
+
+.portfolio .content .group .item .hover_text {
+  width: 100%;
+  padding: 0.5rem 0 0.75rem 0;
+  position: absolute;
+  bottom: -12.5rem;
+  text-align: center;
+  transition: all 500ms;
+  background-color: var(--semi_transparent_white_color);
+}
+
+.portfolio .content .group .item .hover_text h3 {
+  margin: 0;
+}
+
+.portfolio .content .group .item .hover_text span {
+  color: var(--grey_variant_two);
+}
+
+.portfolio .content .group .item:hover .hover_text {
+  bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 2.5rem 0;
+  }
+
+  .portfolio .content {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .portfolio .content .item img {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio .content .item img {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 446px) {
+  .portfolio {
+    padding: 8vw 0;
+  }
+
+  .portfolio .title h2{
+    font-size: 5.3vw;
+  }
+
+}

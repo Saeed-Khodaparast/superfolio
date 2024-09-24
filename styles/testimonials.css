@@ -1,0 +1,140 @@
+
+.testimonials {
+  width: 100%;
+  padding: 3.75rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials .content {
+  width: 90%;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials .content .item {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonials .content .top {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials .content .top i{
+  font-size: 2.4rem;
+}
+
+.testimonials .content .top p {
+  margin-right: 1.5rem;
+  font-size: 0.88rem;
+  text-align: justify;
+  color: var(--text_color_secondary);
+}
+
+.testimonials .content .bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.testimonials .content .bottom .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  margin-left: 0.5rem;
+}
+
+.testimonials .content .bottom .info span.title {
+  font-weight: bold;
+}
+
+.testimonials .content .bottom .info span.description {
+  font-size: 0.85rem;
+  color: var(--text_color_tertiary);
+}
+
+.testimonials .content .bottom img {
+  width: 6.25rem;
+  border-radius: 0.625rem;
+}
+
+
+@media (max-width: 1200px) and (min-width: 992px){
+  .testimonials .content .item {
+    width: 24rem;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .testimonials .content .item {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 2.5rem 0;
+  }
+
+  .testimonials .content {
+    flex-direction: column;
+    gap: 3.125rem;
+  }
+
+  .testimonials .content .item {
+    width: 95%;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .testimonials .content .item {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 446px) {
+  .testimonials {
+    padding: 8vw 0;
+  }
+
+  .testimonials .title h2{
+    font-size: 5.3vw;
+  }
+
+  .testimonials .content {
+    gap: 11vw;
+  }
+
+  .testimonials .content .top i{
+    font-size: 8vw;
+  }
+
+  .testimonials .content .top p {
+    font-size: 3.2vw;
+  }
+
+  .testimonials .content .bottom .info span.title {
+    font-size: 3.6vw;
+  }
+
+  .testimonials .content .bottom .info span.description {
+    font-size: 3vw;
+  }
+
+  .testimonials .content .bottom img {
+    width: 18vw;
+  }
+
+}

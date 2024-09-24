@@ -1,0 +1,140 @@
+
+.experiences {
+  width: 100%;
+  padding: 3.75rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiences .content {
+  max-width: 90%;
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.43rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiences .content .item {
+  width: 30rem;
+  border: 0.125rem solid var(--grey_color);
+  border-radius: 0.75rem;
+}
+
+.experiences .content .item .top{
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grey_color);
+}
+
+.experiences .content .item .right h4{
+  margin: 0;
+}
+
+.experiences .content .item .right span{
+  color: var(--grey_variant_two);
+  font-size: 0.88em;
+}
+
+.experiences .content .item .top .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiences .content .item .top .left img{
+  width: 3rem;
+  justify-content: center;
+}
+
+.experiences .content .item .bottom {
+  padding: 1rem 2rem;
+}
+
+.experiences .content .item .bottom p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.88rem;
+  text-align: justify;
+  color: var(--text_color_secondary);
+}
+
+
+@media (max-width: 1200px) and (min-width: 992px){
+  .experiences .content .item {
+    width: 24rem;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .experiences .content .item .top,
+  .experiences .content .item .bottom {
+    padding: 1rem 1.375rem;
+  }
+
+  .experiences .content .item {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experiences {
+    padding: 2.5rem 0;
+  }
+
+  .experiences .content {
+    flex-direction: column;
+  }
+
+  .experiences .content .item {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .experiences .content .item {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 446px) {
+  .experiences {
+    padding: 8vw 0;
+  }
+
+  .experiences .title h2{
+    font-size: 5.3vw;
+  }
+
+  .experiences .content {
+    gap: 5vw;
+  }
+
+  .experiences .content .item .top,
+  .experiences .content .item .bottom{
+    padding: 4vw 6vw;
+  }
+
+  .experiences .content .item .right h4 {
+    font-size: 3.5vw;
+  }
+
+  .experiences .content .item .right span {
+    font-size: 3vw;
+  }
+
+  .experiences .content .item .top .left img {
+    width: 11vw;
+  }
+
+  .experiences .content .item .bottom p {
+    font-size: 3.2vw;
+  }
+  
+}
